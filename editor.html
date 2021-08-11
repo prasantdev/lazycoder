@@ -13,65 +13,67 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="logo">Lazy Coder</h1>
-    </header>
+    <div id="all-container">
+        <header class="header">
+            <h1 class="logo">Lazy Coder</h1>
+        </header>
 
-    <div id="info-container">
-        <p>
-            <select name="" id="">
+        <div id="info-container">
+            <p>
+                <select name="" id="">
                 <option value="Current">Current ..</option>
                 <option value="Current">Another ..</option>
             </select>
-        </p>
-        <p>Line: 0</p>
-        <p>
-            <span>Default</span>: <select name="" id="">
+            </p>
+            <p>Line: 0</p>
+            <p>
+                <span>Default</span>: <select name="" id="">
                 <option value="">String (S)</option>
                 <option value="">Number (N)</option>
             </select>
-        </p>
-    </div>
-
-    <div id="editor-container">
-        <div id="side-bar">
-            <div id="home" class="side-bar-item">
-                <i class="fa fa-home"></i>
-            </div>
-
-            <div id="secrets" class="side-bar-item">
-                <i class="fas fa-lock"></i>
-            </div>
-            <div id="folder" class="side-bar-item">
-                <i class="far fa-folder-open"></i>
-            </div>
-            <div id="new-code" class="side-bar-item">
-                <i class="fas fa-plus"></i>
-            </div>
+            </p>
         </div>
 
-        <div id="main-editor-container">
-            <div id="editor-header-container">
-                <div id="editor-mode" class="code-modes mode-open" data-openMode="editor-body">Editor</div>
-                <div id="preview-mode" class="code-modes" data-openMode="preview-body">Preview</div>
+        <div id="editor-container">
+            <div id="side-bar">
+                <div id="home" class="side-bar-item">
+                    <i class="fa fa-home"></i>
+                </div>
+
+                <div id="secrets" class="side-bar-item">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div id="folder" class="side-bar-item">
+                    <i class="far fa-folder-open"></i>
+                </div>
+                <div id="new-code" class="side-bar-item">
+                    <i class="fas fa-plus"></i>
+                </div>
             </div>
 
-            <div id="workspace-container">
-                <div id="editor-body" class="workspace">
-                    <div id="main" style="display: flex; border: 1px solid black;">
-                        <input type="text" style="width:7rem" placeholder="Key">
-                        <textarea name="" id="" cols="15" rows="2" placeholder="value"></textarea>
-                        <select name="" id="">
+            <div id="main-editor-container">
+                <div id="editor-header-container">
+                    <div id="editor-mode" class="code-modes mode-open" data-openMode="editor-body">Editor</div>
+                    <div id="preview-mode" class="code-modes" data-openMode="preview-body">Preview</div>
+                </div>
+
+                <div id="workspace-container">
+                    <div id="editor-body" class="workspace">
+                        <div id="main" style="display: flex; border: 1px solid black;">
+                            <input type="text" style="width:7rem" placeholder="Key">
+                            <textarea name="" id="" cols="15" rows="2" placeholder="value"></textarea>
+                            <select name="" id="">
                             <option value="string">S</option>
                             <option value="number">N</option>
                         </select>
-                        <div style="display: flex; align-items: center; padding: 0.5rem; width: fit-content;">
-                            <i class="fas fa-minus-circle"></i>
+                            <div id="delete-key" title="Delete key" style="display: flex; align-items: center; padding: 0.5rem; width: fit-content;">
+                                <i class="fas fa-minus-circle"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="preview-body" class="workspace workspace-closed">
-                    This is preview body and blah blah blah
+                    <div id="preview-body" class="workspace workspace-closed">
+                        This is preview body and blah blah blah
+                    </div>
                 </div>
             </div>
         </div>
