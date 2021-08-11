@@ -63,6 +63,7 @@ body {
 #side-bar {
     /* border: 1px solid; */
     height: 100%;
+    min-width: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
