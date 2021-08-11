@@ -5,6 +5,7 @@
     
     #all-container {
         background: #1d2333;
+        height: 100vh;
     }
     
     .header {
@@ -56,7 +57,7 @@
     
     #editor-container {
         display: flex;
-        height: 70vh;
+        height: 90%;
     }
     
     #main-editor-container {
