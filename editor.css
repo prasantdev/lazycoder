@@ -34,7 +34,9 @@
     #info-container p {
         /* padding: 0; */
         margin: 4px;
-        padding: 4px calc(100vw/16);
+        /* padding: 4px calc(100vw/9); */
+        flex: 1;
+        padding: 6px 0;
         background: #1d2333;
         display: flex;
         align-items: center;
