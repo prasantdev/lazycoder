@@ -84,14 +84,14 @@
     }
     
     #main-editor-container {
-        width: 100%;
+        width: calc(100% - 3rem);
         height: 100%;
     }
     
     #side-bar {
         /* border: 1px solid; */
         height: 100%;
-        min-width: 3rem;
+        width: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -126,6 +126,7 @@
         border: 1px solid #eeeeee;
         transition: 0.09s;
         color: white;
+        overflow: auto;
     }
     
     @media screen and (max-width: 1200px) {

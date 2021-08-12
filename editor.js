@@ -2,6 +2,7 @@
 const editorHeaders = document.getElementById('editor-header-container');
 const workspaceContainer = document.getElementById('workspace-container');
 const inpKey = document.getElementById('input-key');
+const preview = document.getElementById('preview-body');
 
 //Event Listeners
 editorHeaders.addEventListener('click', (e) => {
@@ -27,4 +28,17 @@ editorHeaders.addEventListener('click', (e) => {
     e.target.classList.add('mode-open');
 });
 
-inpKey.addEventListener('input')
+// inpKey.addEventListener('input')
+
+//Test codes
+let obj = {
+    "name1": 8,
+    "nmae2": {
+        "name21": "val21",
+        "name22": "val22",
+    }
+}
+let preEl = document.createElement('pre');
+// preEl.innerHTML = JSON.stringify(obj);
+preEl.innerHTML = JSON.stringify(obj, undefined, 2);
+preview.append(preEl);
