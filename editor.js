@@ -39,6 +39,9 @@ let obj = {
     }
 }
 let preEl = document.createElement('pre');
-// preEl.innerHTML = JSON.stringify(obj);
-preEl.innerHTML = JSON.stringify(obj, undefined, 2);
+let codeEl = document.createElement('code');
+codeEl.setAttribute('class', 'language-json line-numbers match-braces');
+codeEl.innerHTML = JSON.stringify(obj, undefined, 2);
+
+preEl.append(codeEl);
 preview.append(preEl);
