@@ -1,5 +1,5 @@
 /* PrismJS 1.24.1
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+json+json5&plugins=line-highlight+line-numbers+show-invisibles+autoloader+toolbar+copy-to-clipboard+download-button+match-braces+treeview */
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=css+clike+javascript+css-extras+diff+json+json5+jsonp&plugins=line-highlight+line-numbers+autolinker+highlight-keywords+normalize-whitespace+toolbar+copy-to-clipboard+download-button+match-braces+diff-highlight+treeview */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -235,41 +235,9 @@ pre[class*="language-"].line-numbers > code {
 			text-align: right;
 		}
 
-.token.tab:not(:empty),
-.token.cr,
-.token.lf,
-.token.space {
-	position: relative;
+.token a {
+	color: inherit;
 }
-
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before,
-.token.space:before {
-	color: #808080;
-	opacity: 0.6;
-	position: absolute;
-}
-
-.token.tab:not(:empty):before {
-	content: '\21E5';
-}
-
-.token.cr:before {
-	content: '\240D';
-}
-
-.token.crlf:before {
-	content: '\240D\240A';
-}
-.token.lf:before {
-	content: '\240A';
-}
-
-.token.space:before {
-	content: '\00B7';
-}
-
 div.code-toolbar {
 	position: relative;
 }
@@ -363,6 +331,20 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 .rainbow-braces .token.punctuation.brace-level-12 {
 	color: #E0E;
 	opacity: 1;
+}
+
+pre.diff-highlight > code .token.deleted:not(.prefix),
+pre > code.diff-highlight .token.deleted:not(.prefix) {
+	background-color: rgba(255, 0, 0, .1);
+	color: inherit;
+	display: block;
+}
+
+pre.diff-highlight > code .token.inserted:not(.prefix),
+pre > code.diff-highlight .token.inserted:not(.prefix) {
+	background-color: rgba(0, 255, 128, .1);
+	color: inherit;
+	display: block;
 }
 
 .token.treeview-part .entry-line {

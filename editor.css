@@ -169,3 +169,12 @@
     #delete-key:active {
         color: red;
     }
+    [contenteditable] {
+        outline: 0px solid transparent;
+      }
+/* .preEl{
+          cursor: text;
+      }
+.token{
+          pointer-events: none;
+      } */

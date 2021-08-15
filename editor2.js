@@ -37,36 +37,27 @@ editorHeaders.addEventListener('click', (e) => {
 // inpKey.addEventListener('input')
 
 //Functions
-let obj = {};
-function addInpKey() {
+function addInpKey(json, newJson) {
     // let preEl = document.createElement('pre');
     // preEl.setAttribute('class', 'preEl');
 // let previewCode = document.createElement('code');
-let k = inpKey.value;
-let v = inpValue.value;
-obj[k] = v;
-// previewCode.setAttribute('class', 'language-json line-numbers match-braces');
+previewCode.setAttribute('class', 'language-json line-numbers match-braces');
 // previewCode.setAttribute('contenteditable', 'true');
 let jsonCode = JSON.stringify(obj, undefined, 2).replace(/</g, '&lt;').replace(/&/g, '&amp;');
 previewCode.innerHTML = jsonCode;
-Prism.highlightElement(previewCode);
 
 // preEl.append(previewCode);
 // preview.append(preEl);
 }
 //Test codes
-// let obj = {
-//     "name1": 8,
-//     "nmae2": {
-//         "name21": "&lt;val21>",
-//         "name22": "val22",
-//     }
-// }
-
-addKey.addEventListener('click', ()=> {
-    addInpKey();
-})
-
+let obj = {
+    "name1": 8,
+    "nmae2": {
+        "name21": "&lt;val21>",
+        "name22": "val22",
+    }
+}
+addInpKey(obj, "nmae2");
 // let preEl = document.createElement('pre');
 // let codeEl = document.createElement('code');
 // codeEl.setAttribute('class', 'language-json line-numbers match-braces');
