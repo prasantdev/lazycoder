@@ -50,15 +50,8 @@ obj[k] = v;
 let jsonCode = JSON.stringify(obj, undefined, 2).replace(/</g, '&lt;').replace(/&/g, '&amp;');
 previewCode.innerHTML = jsonCode;
 Prism.highlightElement(previewCode);
+// previewPre.setAttribute('data-src', `javascript:downloadFile('f${new Date().getTime().toString()}.json,  ${JSON.stringify(obj)}`);
 }
-//Test codes
-// let obj = {
-//     "name1": 8,
-//     "nmae2": {
-//         "name21": "&lt;val21>",
-//         "name22": [1, "test"],
-//     }
-// }
 
 addKey.addEventListener('click', ()=> {
     addInpKey();
@@ -73,3 +66,16 @@ function isParsable(str) {
     }
     return true;
 }
+
+function downloadFile(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+  
+    element.style.display = 'none';
+    document.body.appendChild(element);
+  
+    element.click();
+  
+    document.body.removeChild(element);
+  }

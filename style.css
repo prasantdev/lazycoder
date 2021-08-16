@@ -31,14 +31,45 @@ body {
 
 .header-container {
     width: 100%;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
 }
 
 .header {
-    max-height: 4rem;
     padding: 1.5px;
     width: 70%;
     background: #0099ff;
     border-radius: 0 3px 3px 0;
+}
+.icon-dark-mode{
+    color: white;
+}
+.fas{
+    font-size: 2rem;
+}
+#menu-bars{
+    display: none;
+    height: 100%;
+    width: 3rem;
+}
+@media screen and (max-width: 990px) {
+    #main-container{
+        width: 100%;
+    }
+    .prime-badge{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    #menu-bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #side-bar{
+        position: absolute;
+        left: -100vw;
+    }
 }
