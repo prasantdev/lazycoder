@@ -53,6 +53,9 @@ body {
     height: 100%;
     width: 3rem;
 }
+#cross-container{
+    display: none;
+}
 @media screen and (max-width: 990px) {
     #main-container{
         width: 100%;
@@ -71,5 +74,10 @@ body {
     #side-bar{
         position: absolute;
         left: -100vw;
+    }
+    #cross-container{
+        display: block;
+        float: right;
+        padding: 4px;
     }
 }
