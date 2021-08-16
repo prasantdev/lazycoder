@@ -72,6 +72,7 @@ body {
         align-items: center;
     }
     #side-bar{
+        width: 50%;
         position: absolute;
         left: -100vw;
     }
