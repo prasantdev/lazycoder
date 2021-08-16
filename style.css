@@ -41,6 +41,8 @@ body {
     width: 70%;
     background: #0099ff;
     border-radius: 0 3px 3px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .icon-dark-mode{
     color: white;
@@ -52,6 +54,30 @@ body {
     display: none;
     height: 100%;
     width: 3rem;
+}
+.meno-logo-container{
+    display:flex;
+    align-items: center;
+}
+.main-logo{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+.register-btn-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-btn{
+    padding:5px;
+    border-radius: 5px;
+    margin: 3px;
+    background: white;
+    color:#0099ff ;
+    font-size: 1rem ;
+    border: none ;
 }
 #cross-container{
     display: none;
