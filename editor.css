@@ -111,7 +111,15 @@
         cursor: pointer;
         font-weight: 100;
     }
-    
+    .side-bar-item:hover{
+        border-left:3px solid white ;
+    }
+    .side-bar-item-icon{
+        color: rgba(255, 255, 255, 0.582);
+    }
+    .side-bar-item-icon:hover{
+        color: white;
+    }
     #workspace-container {
         display: flex;
         background: #1d2333;
