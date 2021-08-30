@@ -105,7 +105,8 @@
     
     .side-bar-item {
         padding: 1rem 2px;
-        color: white;
+        /* color: white; */
+        color: rgba(255, 255, 255, 0.582);
         /* background: rgb(31, 20, 20); */
         text-align: center;
         cursor: pointer;
@@ -113,13 +114,12 @@
     }
     .side-bar-item:hover{
         border-left:3px solid white ;
+        color: white !important;
     }
-    .side-bar-item-icon{
-        color: rgba(255, 255, 255, 0.582);
-    }
+/*    
     .side-bar-item-icon:hover{
         color: white;
-    }
+    } */
     #workspace-container {
         display: flex;
         background: #1d2333;
