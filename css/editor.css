@@ -38,18 +38,38 @@
         flex: 1;
         padding: 6px 0;
         background: #1d2333;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
+        display: none;
     }
     
     #info-container p select,
-    #info-container p select option {
+    #info-container p select option, #info-container .more-info-item select {
         background: #1d2333;
         color: white;
         border: none;
+        cursor: pointer;
     }
-    
+
+    .more-info-item{
+        height: 100%;
+        width: 100%;
+        /* background: rgb(172, 115, 115);
+        border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 35px;
+    }
+    .more-info-icon{
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+        background: #1d2333;
+        cursor: pointer;
+    }
+
     #editor-header-container {
         display: flex;
         justify-content: space-around;
@@ -162,8 +182,16 @@
         .side-bar-item .fa-plus::after {
             content: " New";
         }
+        #info-container p{
+            display: flex;
+        }
+        .more-info-item{
+            display: none;
+        }
     }
     
+
+
     #delete-key {
         display: flex;
         align-items: center;
