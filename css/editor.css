@@ -136,6 +136,9 @@
         border-left:3px solid white ;
         color: white !important;
     }
+    .side-bar-item-icon{
+        color: white;
+    }
 /*    
     .side-bar-item-icon:hover{
         color: white;
@@ -157,6 +160,17 @@
         transition: 0.09s;
         color: white;
         overflow: auto;
+    }
+    .buttons{
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 4px;
+        border: none;
+        margin: 3px;
+    }
+    .buttons:hover {
+        background: rgba(0, 0, 0, 0.411);
+        color: white;
     }
     
     @media screen and (max-width: 1200px) {
@@ -190,7 +204,9 @@
         }
     }
     
-
+#type-indiv{
+    cursor: pointer;
+}
 
     #delete-key {
         display: flex;
@@ -199,6 +215,7 @@
         width: fit-content;
         background: white;
         color: black;
+        cursor: pointer;
     }
     
     #delete-key:hover,

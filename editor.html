@@ -26,7 +26,7 @@
 
         <div id="info-container">
             <p class="project-name-container">
-                Current project 
+                Current project
             </p class="info-item">
             <p>Line: 0</p>
             <p class="info-item">
@@ -49,19 +49,25 @@
 
         <div id="editor-container">
             <div id="side-bar">
-                <div id="home" class="side-bar-item">
-                    <i class="fa fa-home side-bar-item-icon"></i>
-                </div>
 
-                <div id="secrets" class="side-bar-item">
+                <a href="/">
+                    <div id="home" class="side-bar-item">
+                        <i class="fa fa-home side-bar-item-icon"></i>
+                    </div>
+                </a>
+
+                <!-- <div id="secrets" class="side-bar-item">
                     <i class="fas fa-lock side-bar-item-icon"></i>
-                </div>
-                <div id="folder" class="side-bar-item">
+                </div> -->
+
+                <!-- <div id="folder" class="side-bar-item">
                     <i class="far fa-folder-open side-bar-item-icon"></i>
-                </div>
-                <div id="new-code" class="side-bar-item">
-                    <i class="fas fa-plus side-bar-item-icon"></i>
-                </div>
+                </div> -->
+                <a href="javascript:createNew() ">
+                    <div id="new-code" class="side-bar-item">
+                        <i class="fas fa-plus side-bar-item-icon"></i>
+                    </div>
+                </a>
             </div>
 
             <div id="main-editor-container">
@@ -75,7 +81,7 @@
                         <div id="input-container" style="display: flex; border: 1px solid black;">
                             <input type="text" style="width:7rem" id="input-key" placeholder="Key">
                             <textarea name="" id="input-value" cols="15" rows="2" placeholder="value"></textarea>
-                            <select name="" id="">
+                            <select name="" id="type-indiv">
                                 <option value="string" title="String">S</option>
                                 <option value="number" title="Number">N</option>
                             </select>
@@ -84,22 +90,12 @@
                                 <i class="fas fa-minus-circle"></i>
                             </div>
                         </div>
-                        <button id="input-key-add">Add</button>
-                        <button id="input-key-cancel">Cancel</button>
+                        <button id="input-key-add" class="buttons">Add</button>
+                        <button id="input-key-cancel" class="buttons">Cancel</button>
                     </div>
                     <div id="preview-body" class="workspace workspace-closed">
                         <pre id="pre-code">
-                            <code id="code-code" class="language-json line-numbers match-braces">
-                                <!-- {
-                                    "name1": 8,
-                                    "nmae2": {
-                                        "name21": "&lt;val21>",
-                                        "name22": "val22",
-                                        "col": "#fff",
-                                        "test": [1, "tst"]
-                                    }
-                                } -->
-                            </code>
+                            <code id="code-code" class="language-json line-numbers match-braces"></code>
                         </pre>
                     </div>
                 </div>
